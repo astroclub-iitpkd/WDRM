@@ -22,32 +22,36 @@
       color: gray;  /* Apply gray color to the hint links */
     }
   </style>
+  <!-- Include MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <h1>Weekly dose of Recreational Mathematics</h1>
-  <h2>Week 2</h2>
+  <h2>Week 5</h2>
   <p>Date: July 7, 2024</p>
   <p><i>Try out the question for a while before looking at the hints.</i></p>
   <hr>
 
   <h3>Problems</h3>
   <ol>
-    <li>
-      <p>Find a triangular number which is the sum of the squares of two consecutive odd numbers. Also explain the methodology by which you got the number.</p>
-    </li>
-    <li>
-      <p>Find a six-digit square such that the numbers represented by its first three digits and its last three digits are consecutive.</p>
-      <!-- <ul>
+      <div id="math-problems">
+          <li>Find 
+            \[0.5^{0.7^{0.9^{.^.}}} = \;?\]
+          </li>
+          <li>Find \(x > y > z > 0\) where \(x, y, z\) are integers such that
+            \[
+            \frac{1}{x} + \frac{2}{y} + \frac{3}{z} = 1
+            \]
+          </li>
+      </div>
+      <ul>
+        
         <li>
           <a href="javascript:void(0)" onclick="showHint('hint1')" class="hint"><b>Hint 1</b> </a>
-          <div id="hint1" style="display: none;">Squares can only end in specific digits: 0, 1, 4, 5, 6, or 9.</div>
+          <div id="hint1" style="display: none;">Try and notice the pattern the exponents increase.</div>
         </li>
-        <li>
-          <a href="javascript:void(0)" onclick="showHint('hint2')" class="hint"><b>Hint 2</b> </a>
-          <div id="hint2" style="display: none;"> None of these digits leave a remainder of 6 when divided by 7.</div>
-        </li>
-      </ul> -->
-    </li>
+        </ul>
   </ol>
 
   <h3>Solutions</h3>
