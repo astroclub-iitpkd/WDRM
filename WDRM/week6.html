@@ -21,40 +21,33 @@
     .hint {
       color: gray;  /* Apply gray color to the hint links */
     }
+    .problem {
+      margin-bottom: 20px;  /* Add spacing between problems */
+    }
   </style>
   <!-- Include MathJax -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <h1>Weekly dose of Recreational Mathematics</h1>
-  <h2>Week 5</h2>
-  <p>Date: July 7, 2024</p>
-  <p><i>Try out the question for a while before looking at the hints.</i></p>
+  <h1>Weekly Dose of Recreational Mathematics</h1>
+  <h2>Week 6</h2>
+  <p>Date: July 14, 2024</p>
   <hr>
 
   <h3>Problems</h3>
   <ol>
-      <div id="math-problems">
-          <li>Find 
-            \[0.5^{0.7^{0.9^{.^.}}} = \;?\]
-          </li>
-          <li>Find \(x > y > z > 0\) where \(x, y, z\) are integers such that
-            \[
-            \frac{1}{x} + \frac{2}{y} + \frac{3}{z} = 1
-            \]
-          </li>
-      </div>
-      <ul>
-        
-        <li>
-          <a href="javascript:void(0)" onclick="showHint('hint1')" class="hint"><b>Hint 1</b> </a>
-          <div id="hint1" style="display: none;">Try and notice the pattern the exponents increase.</div>
-        </li>
-        </ul>
+    <div id="math-problems">
+      <li class="problem">Find all pairs \((k,n)\) of positive integers for which \(k^4+n^2\) is divisible by \(7^k-3^n\).</li>
+      <li class="problem">Find all functions \(f:\mathbb{R}^+\rightarrow \mathbb{R}^+\) such that:
+        \[
+        f(x+f(y)) = f(x+y) + f(y) \quad \forall x,y\in \mathbb{R}^+
+        \]
+      </li>
+    </div>
   </ol>
 
   <h3>Solutions</h3>
-  <p><i>Solutions will be available next Saturday (July 13th, 2024).</i></p>
+  <p><i>Solutions will be available next Saturday (July 20th, 2024).</i></p>
 </body>
 </html>
