@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Dose of Recreational Mathematics - Solutions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f9;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 1.5em;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    .solution {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .math-block {
+      margin-bottom: 20px;
+    }
+    .hint {
+      color: gray;
+    }
+  </style>
+  <!-- Include MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <h1>Weekly Dose of Recreational Mathematics</h1>
+  <h2>Week 5</h2>
+  <p>Date: July 13, 2024</p>
+  <hr>
+
+  <div class="solution">
+    <h3>Solution 1</h3>
+    <p class="math-block">The statement:</p>
+    <p class="math-block">$$0.5^{0.7^{0.9^{.^{.^{.}}}}}$$ = ?</p>
+    <p class="math-block">has the exponents increasing in the form of an arithmetic progression. Hence, let us consider the sub exponent series from 0.9:</p>
+    <p class="math-block">$$0.9^{1.1^{1.3^{1.5^{1.7^{.^{.^{.}}}}}}}$$</p>
+    <p class="math-block">One can notice that the exponents get larger without a bound,</p>
+    <p class="math-block">$$\lim_{n\rightarrow\infty} 1.1^{1.3^{1.5^{1.7^{.^{.^{.}}}}}} \rightarrow\infty$$</p>
+    <p class="math-block">Hence,</p>
+    <p class="math-block">$$\lim_{n\rightarrow\infty} 0.9^{1.1^{1.3^{1.5^{1.7^{.^{.^{.}}}}}}} \rightarrow 0 \text{ as } 0.9^\infty \rightarrow 0$$</p>
+    <p class="math-block">Then trivially,</p>
+    <p class="math-block">$$\lim_{n\rightarrow\infty} 0.7^{0.9^{1.1^{1.3^{1.5^{1.7^{.^{.^{.}}}}}}}} \rightarrow 1 \text{ as } 0.7^0 \rightarrow 1$$</p>
+    <p class="math-block">Which brings us to the fact that:</p>
+    <p class="math-block">$$0.5^{0.7^{0.9^{.^{.^{.}}}}} = 0.5^1 = 0.5$$</p>
+  </div>
+
+  <div class="solution">
+    <h3>Solution 2</h3>
+    <p>The solution for this becomes simpler when bounds are added. We know that \( x>y>z>0 \) and each of them are integers.</p>
+    <p class="math-block">As</p>
+    <p class="math-block">$$\frac{1}{x}+\frac{2}{y}+\frac{3}{z} = 1 \Rightarrow \frac{3}{z}<1;\frac{2}{y}<\frac{2}{z};\frac{1}{x} <\frac{1}{z}$$</p>
+    <p class="math-block">$$\frac{1}{z}+\frac{2}{z}+\frac{3}{z} > 1 \Rightarrow z <6 $$</p>
+    <p> Hence we have \( 3< z < 6 \)</p>
+    <p>Case 1 : \( z=4 \)</p>
+    <p class="math-block">$$\frac{1}{x}+\frac{2}{y}+\frac{3}{4} = 1 $$</p>
+    <p class="math-block">$$\frac{1}{x}+\frac{2}{y}= \frac{1}{4}  $$</p>
+    <p class="math-block">$$\frac{y+2x}{xy}= \frac{1}{4}  $$</p>
+    <p class="math-block">$$4y+8x = xy$$</p>
+    <p class="math-block">$$4y+8x -xy - 32= -32$$</p>
+    <p class="math-block">$$(x-4)(y-8)= 32$$</p>
+    <p>Now we can construct the solution from the factors of 32.</p>
+    <p class="math-block">$$\begin{cases} 
+    x-4 = 32,16,8,4,2,1\\
+    y-8 = \;1,2,4,8,16,32\\
+    \end{cases}$$</p>
+    <p class="math-block">$$\begin{cases} 
+    x = 36,20,\xcancel{12,8,6,5}\\
+    y = \;9,10,\xcancel{12,16,24,40}\\
+    \end{cases}$$</p>
+    <p>As per the inequality ignore wherever \(x < y \).</p>
+    <p>Which gives us our first two pairs \((36,9,4),(20,10,4)\)</p>
+    <p>Case 2: \( z=5 \)</p>
+    <p>Following the same steps we get the solution \((15,6,5)\)</p>
+  </div>
+</body>
+</html>
