@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Dose of Recreational Mathematics</title>
+  <style>
+    .problem {
+      margin-bottom: 20px;  /* Add spacing between problems */
+    }
+  </style>
+  <!-- Include MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <h1>Weekly Dose of Recreational Mathematics</h1>
+  <h2>Week 9</h2>
+  <p>Date: August 4, 2024</p>
+  <hr>
+
+  <h3>Problems</h3>
+  <ol>
+    <div id="math-problems">
+      <li class="problem">
+        Given a sequence \( a_1, a_2, \ldots, a_n \) of real numbers. For each \( i \) \( (1 \leq i \leq n) \) define
+        \[
+        d_i = \max \{a_j : 1 \leq j \leq i\} - \min \{a_j : i \leq j \leq n\}
+        \]
+        and let
+        \[
+        d = \max \{d_i : 1 \leq i \leq n\}.
+        \]
+        <ol type="a">
+          <li>
+            Prove that for arbitrary real numbers \( x_1 \leq x_2 \leq \cdots \leq x_n \),
+            \[
+            \max \{|x_i - a_i| : 1 \leq i \leq n\} \geq \frac{d}{2} \, (1).
+            \]
+          </li>
+          <li>
+            Show that there exists a sequence \( x_1 \leq x_2 \leq \cdots \leq x_n \) of real numbers such that we have equality in (1).
+          </li>
+        </ol>
+      </li>
+      <li class="problem">
+        Let \( f(x) \) be a polynomial with real coefficients of degree 2. Suppose that for some pairwise distinct real numbers \( a \), \( b \), \( c \) we have
+        \[
+        f(a) = bc, \quad f(b) = ca, \quad f(c) = ab.
+        \]
+        Determine \( f(a+b+c) \) in terms of \( a, b, c \).
+      </li>
+    </div>
+  </ol>
+
+  <h3>Solutions</h3>
+  <p><i>Solutions will be available next Saturday (August 10th, 2024).</i></p>
+</body>
+</html>
